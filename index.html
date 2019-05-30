@@ -3,6 +3,8 @@
 <html lang = "en">
     
     <head>
+
+        <!--Metadata Start-->
         <title>Strath Rowing</title>
         
         <meta charset="utf-8" />
@@ -11,10 +13,53 @@
         <meta name="author" content="Daniel Lowry">
         <meta name="description" content="Strathclyde University Boat Club. Est. 1967, is Strathclyde Universities student run rowing club, situated on the bank of the Clyde.">
         <meta name="keywords" content="subc, strathclyde, strath rowing, strath sports, strathclyde university, clyde, scottish rowing, scotland rowing, strathclyde rowing club, strathclyde boat club">
+        <!--Metadata End-->
+
+        <link rel="stylesheet" href="CSS/styles.css">
+
     </head>
 
     <body>
+    
+        <header>
 
-        
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="Images/logo.png" alt="SUBC Logo"></a>
+                </div>
+                    
+
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+    
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Committee</a></li>
+                        <li><a href="#">Fundraising</a></li>
+                    </ul>
+            </nav>
+        </header>
+
+        <div class="parallax" data-parallax="scroll" data-z-index="-1" data-image-src="Images/Header.jpg">
+            <div class="hero">
+                <h1 class="hero-text">Strathclyde University Boat Club</h1>
+            </div>
+        </div>
+    
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+        <!--parallax.js-->    
+        <script src="JS/parallax.min.js"></script>
+    
+        <!--Custom JS-->
+        <script src="JS/app.js"></script>
     </body>
+    
 </html>
