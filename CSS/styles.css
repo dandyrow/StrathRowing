@@ -260,6 +260,7 @@ main {
 
     .home-video {
         margin: 0 5rem;
+        height: 516px;
     }
 
     .home-video iframe {
