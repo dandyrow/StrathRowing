@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 
-<html lang = "en">
-    
-    <head>
+<html lang="en">
 
-        <!--Metadata Start-->
-        <title>Strath Rowing</title>
-        <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
-        
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
 
-        <meta name="author" content="Daniel Lowry">
-        <meta name="description" content="Strathclyde University Boat Club. Est. 1967, is Strathclyde Universities student run rowing club, situated on the bank of the Clyde.">
-        <meta name="keywords" content="subc, strathclyde, strath rowing, strath sports, strathclyde university, clyde, scottish rowing, scotland rowing, strathclyde rowing club, strathclyde boat club">
-        <!--Metadata End-->
+    <!--Metadata Start-->
+    <title>Strath Rowing</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 
-        <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
+    <meta name="author" content="Daniel Lowry">
+    <meta name="description"
+        content="Strathclyde University Boat Club. Est. 1967, is Strathclyde Universities student run rowing club, situated on the bank of the Clyde.">
+    <meta name="keywords"
+        content="subc, strathclyde, strath rowing, strath sports, strathclyde university, clyde, scottish rowing, scotland rowing, strathclyde rowing club, strathclyde boat club">
+    <!--Metadata End-->
 
-    <body>
-    
-        <header>
+    <link rel="stylesheet" href="CSS/styles.css">
 
-            <nav>
-                <div class="logo">
-                    <a href="#"><img src="Images/logo.png" alt="SUBC Logo"></a>
-                </div>
-                    
+</head>
 
-                    <div class="hamburger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-    
-                    <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Committee</a></li>
-                        <li><a href="#">Fundraising</a></li>
-                    </ul>
-            </nav>
-        </header>
+<body>
 
-        <div class="parallax" data-parallax="scroll" data-z-index="-10" data-image-src="Images/Header.jpg" data-ios-fix="true" data-android-fix="true">
-            <div class="hero">
-                <h1 class="hero-text">Strathclyde University Boat Club</h1>
-            </div>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="Images/logo.png" alt="SUBC Logo"></a>
         </div>
-    
-        <!--JQuery-->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    
-        <!--parallax.js-->    
-        <script src="JS/parallax.min.js"></script>
-    
-        <!--Custom JS-->
-        <script src="JS/app.js"></script>
-    </body>
-    
+
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Committee</a></li>
+            <li><a href="#">Fundraising</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="parallax" data-parallax="scroll" data-z-index="-10" data-image-src="Images/top.jpg"
+            data-ios-fix="true" data-android-fix="true">
+            <h1 class="home-header">Strathclyde University Boat Club</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="home-about" data-parallax="scroll" data-z-index="-10" data-image-src="Images/about-crop.jpg" data-position-y="-10px">
+            <div class="home-about-textbox">
+                <h1>Who we are</h1>
+            <p>Strathclyde University Boat Club has over 50 years of history rowing on the
+                River Clyde. We have grown from humble origins and continue to be a completely student-run club.</p>
+
+            <p>We compete at every category from novice level through to championship. We welcome rowers
+                of all abilities and experience levels, as well as those who have yet to begin their rowing careers.</p>
+                </div>
+        </div>
+
+       <section class="home-video">
+            <iframe width="652" height="354" src="https://www.youtube.com/embed/-f7dKyuMtgc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+    </main>
+
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--parallax.js-->
+    <script src="JS/parallax.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="JS/app.js"></script>
+</body>
+
 </html>

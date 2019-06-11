@@ -27,7 +27,7 @@ $(document).ready(function(){
       }
 
       else{
-          $("nav").css("background" , "rgba(0, 0, 0, 0)");  	
+          $("nav").css("background" , "rgba(0, 0, 0, 0)"); 
       }
   })
 })

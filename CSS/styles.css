@@ -1,6 +1,6 @@
 /* imports, variables and resets */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap');
 :root {
     --accent-color: #8F0A37;
 }
@@ -12,9 +12,10 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/* nav styles start */
 
 nav {
     display: flex;
@@ -87,7 +88,8 @@ nav ul {
     color: white;
     text-decoration: none;
     position: relative;
-    font-size: 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 nav a:hover {
@@ -98,9 +100,7 @@ li.fade {
     opacity: 1;
 }
 
-/* nav styles start */
-
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 60rem) {
         
     nav {
         display: grid;
@@ -139,15 +139,14 @@ li.fade {
         color: white;
         text-decoration: none;
         position: relative;
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 1.3rem;
     }
 
     .nav-links a::before {
         content: '';
         display: block;
         height: 3px;
-        background: var(--accent-color);
+        background: white;
         position: absolute;
         bottom: -0.25em;
         right: 0;
@@ -157,28 +156,107 @@ li.fade {
         transition: transform ease-in-out 250ms;
     }
 
-    nav a:hover {
-        color: var(--accent-color);
+    nav a:hover, nav a:focus {
+        color: white;
     }
 
-    nav a:hover::before {
+    nav a:hover::before, nav a:focus::before {
         transform: scale(1, 1);
     }
 }
 
 /* nav styles end*/
 
+/* Header */
 .parallax {
-    min-height: 500px;
+    min-height: 400px;
     position: relative;
     z-index: -10;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.329);
+    /*background-image: url(/Images/header.jpg)*/
 }
 
-.hero-text {
+.home-header {
     color: white;
-    padding: 20px;
+    padding: 0.6em;
+    font-weight: 700;
+    font-size: 2.5rem;
 }
+
+/* Main home content */
+main {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.home-about-textbox {
+    background-color: var(--accent-color);
+    padding: 3em;
+    outline: 2px solid white;
+    outline-offset: -2em;
+    color: white;
+    position: relative;
+}
+
+.home-about-textbox h1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: .5em;  
+    background: var(--accent-color);
+    padding: 0 .1em;
+}
+
+.home-about-textbox p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.home-video {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.home-video iframe {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 25rem) {
+    .home-about-textbox h1 {
+        font-size: 2rem;
+        top: .3em;
+        padding: 0 .25em;
+    }
+}
+
+@media (min-width: 60rem) {
+
+    .home-about {
+        padding: 5em;
+        margin: 0 5rem;
+    }
+    
+    .home-about-textbox {
+        width: 31em;        
+        margin-left: -2.5%;
+    }
+
+    .home-about-textbox h1 {
+        font-size: 2.4rem;
+        top: .1em;
+    }
+
+}
+
