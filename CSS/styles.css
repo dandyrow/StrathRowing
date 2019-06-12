@@ -259,9 +259,8 @@ main {
         top: .1em;
     }
 
-    .home-video {
-        margin: 0 5rem;
-        height: 516px;
+    .video-section {
+        padding: 4em 20em;
     }
 }
 
