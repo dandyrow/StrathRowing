@@ -100,7 +100,7 @@ li.fade {
     opacity: 1;
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 70rem) {
         
     nav {
         display: grid;
@@ -168,16 +168,17 @@ li.fade {
 /* nav styles end*/
 
 /* Header */
+
 .parallax {
-    min-height: 400px;
+    min-height: 100vh;
     position: relative;
-    z-index: -10;
+    z-index: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.329);
-    /*background-image: url(/Images/header.jpg)*/
 }
 
 .home-header {
@@ -187,12 +188,41 @@ li.fade {
     font-size: 2.5rem;
 }
 
+.home-header span {
+    display: block;
+    font-weight: 400;
+}
+
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 3px;
+    border-style: solid;
+    padding: .5em 1.75em;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.button-accent {    
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: var(--accent-color);
+    color: white;
+}
+
 /* Main home content */
 main {
     margin: 0 auto;
 }
 
 .home-about-textbox {
+    max-width: 31em;
     background-color: var(--accent-color);
     padding: 3em;
     outline: 2px solid white;
@@ -232,7 +262,8 @@ main {
     width: 100%;
   }
 
-@media (min-width: 25rem) {
+/* Resize About Title Mobile */
+@media (min-width: 26rem) {
     .home-about-textbox h1 {
         font-size: 2rem;
         top: .3em;
@@ -240,15 +271,22 @@ main {
     }
 }
 
-@media (min-width: 60rem) {
+/* Resize Mobile Textbox */
+@media (min-width: 660px) {
+    .home-about {
+        padding: 5rem;
+    }
+}
+
+/* Standard Desktop */
+@media (min-width: 70rem) {
 
     .home-about {
-        padding: 5em;
+        padding: 8em;
         margin: 0 5rem;
     }
     
-    .home-about-textbox {
-        width: 31em;        
+    .home-about-textbox {        
         margin-left: -2.5%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -262,6 +300,13 @@ main {
         margin: 0 auto;
         padding: 5rem 0;
         width: 45rem;
+    }
+}
+
+/* Ultrawide Desktop */
+@media (min-width: 130rem) {
+    .home-about {
+        padding-left: 15em;
     }
 }
 
