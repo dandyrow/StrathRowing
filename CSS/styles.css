@@ -206,14 +206,14 @@ li.fade {
 }
 
 .button-accent {    
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    color: white;
 }
 
 .button-accent:hover,
 .button-accent:focus {
     background: var(--accent-color);
     color: white;
+    border-color: var(--accent-color);
 }
 
 /* Main home content */
