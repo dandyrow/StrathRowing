@@ -8,6 +8,9 @@
     <title>Strath Rowing</title>
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 
+    <!-- Add social icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,7 +33,7 @@
 <body>
 
     <nav>
-        <div class="logo">
+        <div class="nav-logo">
             <a href="#"><img src="Images/logo.png" alt="SUBC Logo"></a>
         </div>
 
@@ -53,7 +56,7 @@
     <header>
         <div class="parallax" data-parallax="scroll" data-z-index="-10" data-image-src="Images/top.jpg"
             data-ios-fix="true" data-android-fix="true">
-            <h1 class="home-header">Strathclyde University Boat Club 
+            <h1 class="home-header">Strathclyde University Boat Club
                 <span>Est. 1967</span>
             </h1>
             <a href="#" class="button button-accent">Find out more</a>
@@ -63,33 +66,69 @@
     <main>
 
         <section>
-        <div class="home-about" data-parallax="scroll" data-z-index="-10" data-image-src="Images/about-women.jpg" data-position-y="-10px">
-            <div class="home-about-textbox">
-                <h1>Who we are</h1>
-            <p>Strathclyde University Boat Club has over 50 years of history rowing on the
-                River Clyde. We have grown from humble origins and continue to be a completely student-run club.</p>
+            <div class="home-about" data-parallax="scroll" data-z-index="-10" data-image-src="Images/about-women.jpg"
+                data-position-y="-10px">
+                <div class="home-about-textbox">
+                    <h1>Who we are</h1>
+                    <p>Strathclyde University Boat Club has over 50 years of history rowing on the
+                        River Clyde. We have grown from humble origins and continue to be a completely student-run club.
+                    </p>
 
-            <p>We compete at every category from novice level through to championship. We welcome rowers
-                of all abilities and experience levels, as well as those who have yet to begin their rowing careers.</p>
+                    <p>We compete at every category from novice level through to championship. We welcome rowers
+                        of all abilities and experience levels, as well as those who have yet to begin their rowing
+                        careers.</p>
                 </div>
-        </div>
+            </div>
         </section>
 
-       <section class="video-section">
-           <div class="home-video responsive">
-        <iframe width="917" height="516" src="https://www.youtube.com/embed/0DOTJGKK0tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
+        <section class="video-section">
+            <div class="home-video responsive">
+                <iframe width="917" height="516" src="https://www.youtube.com/embed/0DOTJGKK0tg" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </section>
 
         <section class="fb-section">
-            
+
             </div>
         </section>
 
     </main>
 
     <footer>
-        
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#"><img src="Images/logo.png" alt="SUBC Logo"></a>
+            </div>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/SUBCRowing/" title="Like us on Facebook" target="_blank">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true" style="color:white"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/subc_/" title="Follow us on Instagram" target="_blank">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true" style="color:white"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCBXBmwKg8c5iQlhg6lo4VNg/" title="Subscribe to us on YouTube" target="_blank">
+                        <i class="fa fa-youtube fa-2x" aria-hidden="true" style="color:white"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/SUBC_Rowing" title="Follow us on Twitter" target="_blank">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true" style="color:white"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p>Sports Union, Level 7,<span>90 John St,</span>Glasgow, <span>G1 1JH</span></p>
+                <p>subc.online@gmail.com</p>
+            </div>
+        </div>
     </footer>
 
 
@@ -104,7 +143,8 @@
     <script src="JS/app.js"></script>
 
     <!--Facebook-->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
 </body>
 
 </html>
