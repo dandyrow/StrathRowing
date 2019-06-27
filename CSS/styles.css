@@ -75,7 +75,7 @@ nav ul {
 }
 
 .nav-links.open {
-    clip-path: circle(1400px at 90% -10%);
+    clip-path: circle(3400px at 90% -10%);
     pointer-events: all;
 }
 
