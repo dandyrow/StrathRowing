@@ -70,7 +70,7 @@ nav ul {
     align-items: center;
     clip-path: circle(0px at 90% -10%);
     -webkit-clip-path: circle(0px at 90% -10%);
-    transition: all 0.7s ease-out;
+    transition: all 0.8s ease-out;
     pointer-events: none;
     z-index: 1;
 }
@@ -341,8 +341,12 @@ footer p span {
     display: block;
 }
 
-/*Social Buttons Styles*/
+@media screen and (min-width: 70rem) {
+    
+}
 
+
+/*Social Buttons Styles*/
 
 ul.social-icons {
     display: block;
@@ -353,8 +357,4 @@ ul.social-icons {
 ul.social-icons li {
     display: inline-block;
     margin: 1rem;
-}
-
-@media screen and (min-width: 70rem) {
-    
 }
