@@ -352,3 +352,7 @@ ul.social-icons li {
     display: inline-block;
     margin: 1rem;
 }
+
+@media screen and (min-width: 70rem) {
+    
+}
