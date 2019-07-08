@@ -17,11 +17,13 @@ footer {
 }
 
 .footer-logo {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-logo a {
-    margin: auto;
+.footer-logo img {
+    width: 170px;
 }
 
 .social-icons {

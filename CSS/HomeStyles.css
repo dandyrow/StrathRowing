@@ -102,7 +102,7 @@ main {
 }
 
 /* Resize Mobile Textbox */
-@media (min-width: 660px) {
+@media (min-width: 575px) {
     .home-about {
         padding: 5rem;
     }
