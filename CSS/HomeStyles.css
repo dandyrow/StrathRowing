@@ -73,7 +73,7 @@ main {
 
 .home-about-textbox p {
     padding: 1rem;
-    text-align: center;
+    text-align: justify;
 }
 
 .home-video {
