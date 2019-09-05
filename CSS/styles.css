@@ -39,7 +39,7 @@ body {
     display: block;
     margin: 3em auto;
     width: 10rem;
-    height: 16rem;
+    height: 10rem;
     border-radius: 50%;
     background: var(--accent-color)
 }
@@ -47,12 +47,14 @@ body {
 @media screen and (min-width: 23rem) {
     .profile-img {
         width: 12rem;
+        height: 12rem;
     } 
 }
 
 @media screen and (min-width: 30rem) {
     .profile-img {
         width: 15rem;
+        height: 15rem;
     }
 
     .heading {
@@ -67,6 +69,7 @@ body {
 @media screen and (min-width: 70rem) {
     .profile-img {
         width: 16rem;
+        height: 16rem;
     }
 
     .heading {
