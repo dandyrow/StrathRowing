@@ -1,5 +1,6 @@
 :root {
-    --maroon: #8F0A37;
+    --primary-color: #8F0A37;
+    --menu-speed: 0.5s;
 }
 
 * {
@@ -9,8 +10,18 @@
 }
 
 body {
-    background-image: radial-gradient(var(--maroon) 20%, transparent 20%), radial-gradient(var(--maroon) 20%, transparent 20%);
-    background-position: 0 0, 5rem 5rem;
+    background-image: radial-gradient(var(--primary-color) 20%, transparent 20%), radial-gradient(var(--primary-color) 20%, transparent 20%);
+    background-position: 0 1em, 5em 6em;
     background-size: 10em 10em;
     font-family: 'Montserrat', sans-serif;
+  }
+
+  .logo {
+      height: 50px;
+      width: 170px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      z-index: 1;
   }
