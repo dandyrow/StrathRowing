@@ -12,18 +12,23 @@
 }
 
 body {
+    background-image: radial-gradient(var(--accent-color) 20%, transparent 20%), radial-gradient(var(--accent-color) 20%, transparent 20%);
+    background-position: 0 1em, 5em 6em;
+    background-size: 10em 10em;
     font-family: 'Montserrat', sans-serif;
 }
 
 .heading {
     text-align: center;
     margin: 1em;
+    background-color: #fff;
 }
 
 .text {
     text-align: justify;
     margin: 1.3em;
     margin-bottom: 1.5em;
+    background-color: #fff;
 }
 
 .committee-container {
