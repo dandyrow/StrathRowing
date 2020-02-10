@@ -21,7 +21,10 @@ body {
 .heading {
     text-align: center;
     margin: 1em;
-    background-color: #fff;
+}
+
+.heading span {
+    background-color: white;
 }
 
 .text {
@@ -32,12 +35,13 @@ body {
 }
 
 .committee-container {
-    padding-top: 6em;
+    padding-top: 4em;
 }
 
 .section-container {
     margin: 0 auto;
     max-width: 35rem;
+    margin-bottom: 4em;
 }
 
 .profile-img {
@@ -47,6 +51,13 @@ body {
     height: 10rem;
     border-radius: 50%;
     background: var(--accent-color)
+}
+
+.poster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 @media screen and (min-width: 23rem) {
